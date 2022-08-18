@@ -122,10 +122,8 @@ body {
 }
 
 ::placeholder {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #929292;
-  letter-spacing: -0.5px;
-  /* text-align: center; */
 }
 
 input[type="text"]:focus {
@@ -240,18 +238,12 @@ input[type="text"]:focus {
 /********************************/
 .section-hero {
   background-color: #1ac073;
-  /* padding: 4.8rem 0 4.8rem 0; */
-
-  /* padding: 3.2rem 0 4.8rem 0; */
-
   padding: 4.8rem 4.8rem;
 }
 
 .hero {
   max-width: 130rem;
-  padding: 0 9.6rem;
-  /* padding: 0 4.8rem; */
-  /* margin: 3.2rem auto 0 auto; */
+  padding: 0 6.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: flex-start;
@@ -262,39 +254,26 @@ input[type="text"]:focus {
   width: 100%;
 }
 
-.hero-text-box {
-  width: 100%;
-}
-
 .descripion {
   font-size: 2rem;
   color: #fff;
-  margin-bottom: 4.8rem;
+  margin-bottom: 6.2rem;
   line-height: 1.6;
 }
 
 .search-box {
   border: 0;
-  font-size: 1.8rem;
-  padding: 1.6rem 3.2rem;
-  border-radius: 6px 0 0 6px;
-  flex-shrink: 0;
-  flex-grow: 1;
-  padding: 1.6rem 0 2rem 1.6rem;
+  border-radius: 8px 0 0 8px;
+  flex-basis: 30rem;
+  padding: 1.6rem 0 1.6rem 1.6rem;
 }
 
 .hero-cta {
   display: flex;
-  width: 60%;
-  height: 6rem;
 }
 
 .hero-cta button {
   padding: 16px 32px;
-}
-
-.hero-cta input ::placeholder {
-  font-size: 1.2rem;
 }
 
 /********************************/
@@ -669,12 +648,12 @@ video {
 .contact {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 1rem;
 }
 
 .contact-heading {
-  font-size: 3.2rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 400;
   margin: 0;
   color: #101115;
   display: flex;
@@ -692,8 +671,6 @@ video {
 }
 
 form {
-  /* padding: 4.8rem; */
-  width: 45%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem 1rem;
@@ -705,23 +682,25 @@ form {
   font-size: 1.6rem;
   padding: 0.8rem 1.6rem;
   outline: none;
-  border-radius: 8px;
-  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   border: 0;
 }
 .your-name::placeholder,
 .your-email::placeholder {
   font-size: 1.6rem;
+  letter-spacing: -0.5px;
 }
 
 .your-name,
 .your-email {
-  height: 3.2rem;
+  height: 4.8rem;
 }
 
 .text-area {
-  height: 16rem;
+  height: 18rem;
   grid-column: 1/-1;
+  padding: 1.6rem 0 0 01.6rem;
   resize: none;
 }
 
@@ -773,14 +752,24 @@ form {
 }
 
 .modal__form {
+  width: 80%;
   display: flex;
   flex-direction: column;
+  gap: 3.2rem;
 }
 
 .for-name {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
+}
+
+.dish-name {
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem;
+  outline: none;
+  border-radius: 8px;
+  border: 0;
 }
 
 .for-name label,
@@ -789,14 +778,17 @@ form {
   font-size: 1.8rem;
 }
 
+.for-name input,
+.for-url input {
+  padding: 1.2rem 1.2rem;
+  background-color: #f2f2f2;
+  flex-grow: 1;
+}
+
 .for-url {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-.for-name input[text]:hover {
-  transform: scale(2);
+  gap: 4px;
 }
 
 .for .modal__form input[text] {
@@ -808,6 +800,9 @@ form {
   gap: 2rem;
 }
 
+label {
+  margin-bottom: 0;
+}
 .cancel-btn {
   display: inline-block;
   height: 5rem;
